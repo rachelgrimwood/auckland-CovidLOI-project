@@ -21,7 +21,7 @@ It also includes a program in main/management/commands/scraper.py that can be us
 In order to be deployed, a database will need to be created and the details added to populate_database.py, get_list.py, and settings.py.
 settings.py might also need further configuration.  
 The Procfile here is for Heroku deployment. Heroku also reads the requirements.txt automatically.  
-To use with Apache or others, further configuration would need to be done.
+Currently gunicorn is installed. To use with Apache or others, further configuration would need to be done.
 
 ## Demo
 
