@@ -98,11 +98,13 @@ def get_tuples():
     mainlist = tbl
 
     LOIs = [] 
+    i = 1
     n = 0
     while i < len(mainlist):
         LOIs.append((1, str(mainlist[n][0]), str(mainlist[n][1]), str(mainlist[n][2]), str(mainlist[n][3]), str(mainlist[n][4]), str(mainlist[n][5]), int(mainlist[n][5][0:2])))
         #first index is id, optional to set
         #int(mainlist[n][5][0:2]) gives an initial ordering number if needed (though only works because all the initial locations were added in august!)... the scraper adds time.time() to new items which puts them on top..
+        i = i + 1
         n = n + 1
 
     return (LOIs)
