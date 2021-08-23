@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'main/main.css' %}"
+    />
+    <title>Auckland Locations Of Interest</title>
+  </head>
+  <body>
+    <h1>Auckland Locations Of Interest 2021</h1>
+    <h2>In soothing lavender colours and ordered by date/time added :)</h2>
+    <p>
+      This website updates every 10 mins directly from the MOH website, refresh
+      to see updates.
+    </p>
+    <table>
+      <tr class="heading">
+        <th>Location</th>
+        <th>Address</th>
+        <th>Date Visited</th>
+        <th>Time Visited</th>
+        <th>Advice</th>
+        <th>Date added</th>
+      </tr>
+      {% for entry in LOITable %}
+      <tr>
+        <td>{{ entry.location }}</td>
+        <td>{{ entry.address }}</td>
+        <td>{{ entry.date }}</td>
+        <td>{{ entry.time }}</td>
+        <td>{{ entry.advice }}</td>
+        <td>{{ entry.added }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
