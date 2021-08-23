@@ -5,7 +5,7 @@ import mysql.connector
 from mysql.connector import Error
 
 pw = ""
-db = ""
+db = "LOIs"
 host = ""
 user = ""
 
