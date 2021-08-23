@@ -3,7 +3,8 @@
 ## Overview
 
 This Django app produces a website that shows an up-to-date table of all Covid locations of interest in Auckland, New Zealand, ordered by date updated, with the last added or updated items at the top.  
-It is designed to be accessible, easy on the eyes, clear, and readable.
+It is designed to be accessible, easy on the eyes, clear, and readable.  
+
 Since writing this website, the Ministry of Health website updated their locations of interest page to include a sort feature! However, I still find my app useful because it's so clear and quick to read.
 
 ## Dependencies
